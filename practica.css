@@ -1,0 +1,147 @@
+/*Se definen variables que guardan valores para poder reutilizarlos en el codigo*/
+:root{
+   
+    --fuente-base: 'Arial', sans-serif;  
+    --color-primario: #007bff;
+}
+
+/*ayuda a que la pagina sea responsive*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fuente-base);
+    line-height: 1.5;
+    padding: var(--padding-global);
+} 
+
+
+/*Este estilo se aplica desde que la pantalla tiene 768 px, ayuda a que sea responsive*/
+@media (min-width: 768px) {
+    .servicios-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-menu{
+        flex-direction: column;
+        gap: 10px;
+    }
+} 
+
+/*Este estilo se aplica desde que la pantalla tiene 1024 px, ayuda a que sea responsive*/
+@media (min-width: 1024px) {
+    body {
+        padding: 0%;
+    }    
+}
+
+.header {
+    background-color: #0174ff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.header-logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-link:hover{
+    text-decoration: underline;
+}
+
+
+section{
+    padding: 20px ;
+    background-color: #fff;
+}
+
+.servicios {
+    margin: 20px 0;
+    font-family: var(--fuente-base);
+}
+
+.servicios-titulo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.servicios-contenedor{
+    font-family: var(--fuente-base);
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.tarjeta {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgb(0, 0, 0. 0.1);
+}
+
+.tarjeta-destacada {
+    border-color: var(--color-primario);
+}
+
+#equipo {
+    background-attachment: #fff;
+}
+
+h2{
+    color: #123;
+    margin-bottom: 10px;
+}
+
+ul li {
+    list-style: square inside;
+}
+
+form input, form button {
+    display: block;
+    margin: 18px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICARO </title>
+    <link rel="stylesheet" href="practica.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header-logo">ICARO - Innovación y Tecnología</h1>
+        <nav>
+            <ul class="header-menu">
+                <li class="header-menu"><a href="#servicios" class="header-link">Servicios</a></li>
+                <li class="header-menu"><a href="#equipo" class="header-link">Equipo</a></li>
+                <li class="header-menu"><a href="#contacto" class="header-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="servicios" class="servicios">
+            <div class="servicios-contenedor">
+                <h1 class="servicios-titulo">Servicios</h1>
+                <p>Ofrecemos soluciones tecnologicas a medida.</p>
+                <ul >
+                    <li> Desarrollo Software </li>
+                    <li> Consultoria Tecnologica </li>
+                    <li> Inteligencia Artificial </li>
+                </ul>
+                <br>
+                <table class="tarjeta">
+                    <thead class="tarjeta-destacada">
+                        <tr class="tarjeta-destacada">
+                            <th class="tarjeta-destacada">Servicio</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desarrollo de Software</td>
+                            <td>Aplicaciones personalizadas</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>Consultoria</td>
+                            <td>Soluciones estrategicas</td>
+                            <td>$200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="equipo">
+            <h1>Conoce a nuestro Equipo</h1>
+            <video src="video-equipo.mp4" controls> Tu navegador no soporta el video.</video>
+        </section>
+
+        <section id="contacto">
+            <h1>Contáctanos</h1>
+            <form action="/submit" method="POST" enctype="multipart/form-data">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo Electronico:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="archivo">Curriculum:</label>
+                <input type="text" id="archivo" name="archivo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+                <button type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2025 ICARO. Todos los derechos reservados. </p>
+    </footer>
+</body>
+
+</html>
