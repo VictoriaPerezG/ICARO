@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICARO </title>
+    <!--LINKEO BOOTSTRAP PARA NO TENER QUE DESCARGAR TODO EL FRAMEWORK DE MANERA LOCAL-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-center">
+        <h1 class="navbar-brand col-12 text-center" href="#">ICARO - Innovación y Tecnología</h1> 
+    </nav>
+
+
+    <main>
+        <div class="container my-5">
+            <h1 class="text-center">Nuestros Servicios</h1>
+            <div class="row">
+                
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Servicio 1</h5>
+                                <p class="card-text">Descripcion del servicio</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Servicio 2</h5>
+                                <p class="card-text">Descripcion del servicio</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Servicio 3</h5>
+                                <p class="card-text">Descripcion del servicio</p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+
+
+        <div class="container my-5">
+            <h2 class="text-cemter">Contáctanos</h2>
+            <form action="/submit" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electronico:</label>
+                    <input type="text" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+                </div>
+                <button type="submit" aria-label="Enviar" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 col-12">
+        <p> &copy; 2025 ICARO. Todos los derechos reservados. </p>
+    </footer>
+</body>
+
+</html>
