@@ -1,14 +1,14 @@
 /* estilos.css */
 
-body {
+*{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdfcfb;
     color: #333;
     line-height: 1.6;
 }
 
+/*
 .cabecera {
     background-color: #2e3a59;
     color: white;
@@ -58,9 +58,12 @@ body {
 
 #beneficios-lista {
     padding-left: 1.5rem;
-}
+} 
+    */
 
 /*pie de pagina*/
+
+/*
 .pie {
     background-color: #2e3a59;
     color: white;
@@ -88,3 +91,4 @@ body {
     }
 }
 
+*/ 
