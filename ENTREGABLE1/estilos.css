@@ -1,13 +1,32 @@
 /* estilos.css */
 
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
+/*Se definen variables que guardan valores para poder reutilizarlos en el codigo*/
+:root{
+   
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    --color-primario: #007bff;
 }
 
+/*ayuda a que la pagina sea responsive*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    background-color: #802F33 ;
+}
+
+.contenido{
+   background-color: #F4EDE5; 
+   font-family: var(--fuente-base);
+   color: #2C2A26;
+}
+
+a{
+    color: #E3B845;
+}
 /*
 .cabecera {
     background-color: #2e3a59;
