@@ -57,7 +57,30 @@
     color: var(--color-secundario); 
 }
 
-
 .imagen-inicio {
-  max-height: 550px;
+  width: 100%;
+  height: 50vh; 
+  overflow: hidden;
+}
+
+.imagen-inicio img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  display:block;
+  
+}
+
+/* Pantallas grandes */
+@media (min-width: 1200px) {
+  .imagen-inicio {
+    height: 90vh;
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+  .imagen-inicio {
+    height: 40vh;
+  }
 }
